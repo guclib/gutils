@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="title" format="reference|string" />
+    <attr name="content" format="reference|string" />
+    <attr name="titleTextColor" format="color" />
+    <attr name="radius" format="dimension" />
+
+    <declare-styleable name="TitleLayout">
+        <attr name="leftType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="finish" value="1" />
+            <enum name="clicked" value="2" />
+        </attr>
+        <attr name="leftImage" format="reference" />
+        <attr name="imageSize" format="dimension" />
+        <attr name="title" />
+        <attr name="titleTextColor" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleGravity">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+        <!--右侧样式-->
+        <attr name="rightType">
+            <enum name="none" value="0" />
+            <enum name="text" value="7" />
+            <enum name="image" value="8" />
+            <enum name="image_text" value="9" />
+            <enum name="text_spinner" value="10" />
+            <enum name="image_spinner" value="11" />
+        </attr>
+        <!--Spinner样式-->
+        <attr name="rightSpinnerType">
+            <enum name="text" value="0" />
+            <enum name="image_text" value="1" />
+        </attr>
+        <attr name="rightText" format="string|reference" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightImage" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RichTextView">
+        <attr name="title" />
+        <attr name="content" />
+        <attr name="contentDefault" format="string|reference" />
+        <attr name="titleTextColor" />
+        <attr name="contentTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CornerImageView">
+        <attr name="is_circle" format="boolean" />
+        <attr name="radius" />
+        <attr name="left_top_radius" format="dimension" />
+        <attr name="right_top_radius" format="dimension" />
+        <attr name="right_bottom_radius" format="dimension" />
+        <attr name="left_bottom_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="WaterMarkView">
+        <attr name="markerText" format="reference|string" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="markerTextSize" format="dimension" />
+        <attr name="markerTextColor" format="color" />
+        <attr name="markerSpace" format="dimension" />
+        <attr name="fixSpace" format="dimension" />
+        <attr name="radian" format="float" />
+        <attr name="android:alpha" />
+    </declare-styleable>
+
+    <declare-styleable name="PieChartView">
+        <attr name="bgColor" format="color" />
+        <attr name="lineWith" format="dimension" />
+        <!--大圆半径-->
+        <attr name="radius" />
+        <!--内部填充圆半径-->
+        <attr name="radiusInner" format="dimension" />
+        <!--指示圆点半径-->
+        <attr name="radiusCenterPoint" format="dimension" />
+        <!--内圆填充颜色-->
+        <attr name="innerCircleColor" format="dimension" />
+        <attr name="textSize4Describe" format="dimension" />
+        <attr name="textSize4Score" format="dimension" />
+        <attr name="textColor4Describe" format="color" />
+        <attr name="textColor4Score" format="color" />
+        <attr name="isDrawCenterText" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="hintIcon" format="reference" />
+        <attr name="hint1" format="reference|string" />
+        <attr name="hint2" format="reference|string" />
+        <attr name="mulLineHint" format="boolean" />
+        <attr name="topIconMargin" format="dimension" />
+    </declare-styleable>
+
+    <!--自定义SearchView-->
+    <declare-styleable name="SearchView">
+        <attr name="isCheckNull" format="boolean" />
+        <attr name="hintText" format="reference|string" />
+        <attr name="nullTip" format="reference|string" />
+    </declare-styleable>
+
+    <!--viewpager指示器-->
+    <declare-styleable name="BannerIndicator">
+        <!--指示器之间的间隙-->
+        <attr name="gap" format="dimension" />
+        <!--指示器的宽度-->
+        <attr name="slider_width" format="dimension" />
+        <!--指示器的高度-->
+        <attr name="slider_height" format="dimension" />
+        <!--指示器大小变化方向-->
+        <attr name="slider_align">
+            <enum name="Left" value="1" />
+            <enum name="Center" value="0" />
+            <enum name="Right" value="2" />
+        </attr>
+        <!--是否循环指示-->
+        <attr name="isLoop" format="boolean" />
+    </declare-styleable>
+</resources>

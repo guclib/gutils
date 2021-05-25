@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_loading">加载中...</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_sure">确定</string>
+    <string name="ignore_this_version">忽略此版本</string>
+    <string name="update">升级</string>
+    <string name="please_input">请输入</string>
+    <string name="search">搜索</string>
+
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="pickerview_submit">选择</string>
+    <string name="pickerview_cancel">取消</string>
+
+    <string name="str_nul">暂无</string>
+    <string name="str_detail">详情</string>
+    <string name="reboot">程序重启</string>
+</resources>

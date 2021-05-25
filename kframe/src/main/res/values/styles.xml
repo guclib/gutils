@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TransStatusBarTheme" parent="AppTheme.NoActionBar" />
+
+    <style name="MyDialog" parent="Theme.AppCompat.Light.Dialog">
+
+    </style>
+
+    <style name="MyCustomDialog" parent="MyDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyDialogBottom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFrame">@null</item> <!--Dialog的windowFrame框为无-->
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowNoTitle">true</item><!--是否显示标题-->
+        <item name="android:windowIsFloating">true</item>            <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item>         <!--是否半透明-->
+        <item name="android:windowContentOverlay">@null</item>       <!--是否有覆盖-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="AnimAlpha" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/update_app_window_in</item>
+        <item name="android:windowExitAnimation">@anim/update_app_window_out</item>
+    </style>
+
+    <style name="DialogAlphaInOut" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowAnimationStyle">@style/AnimAlpha</item>
+    </style>
+    <!--透明Dialog-->
+    <style name="TransDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <!--加载框样式-->
+    <style name="LoadingDialog" parent="@style/TransDialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="NoEdgeScroll">
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <declare-styleable name="WheelView">
+        <attr name="pickerview_gravity" format="integer" />
+        <attr name="pickerview_textColorOut" format="reference" />
+        <attr name="pickerview_textColorCenter" format="reference" />
+        <attr name="pickerview_dividerColor" format="reference" />
+        <attr name="pickerview_textSize" format="dimension" />
+        <attr name="pickerview_lineSpacingMultiplier" format="float" />
+    </declare-styleable>
+    <!--ListView效果-->
+    <style name="DefaultListView">
+        <item name="android:divider">@drawable/dra_divider_common_listview</item>
+        <item name="android:dividerHeight">@dimen/divider</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:listSelector">#00000000</item>>
+    </style>
+    <!--分割线横向-->
+    <style name="DividerH">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <!--分割线竖向-->
+    <style name="DividerV">
+        <item name="android:layout_width">@dimen/divider</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+</resources>

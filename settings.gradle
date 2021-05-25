@@ -1,1 +1,1 @@
-include ':app',':gutils'
+include ':app',':gutils',':kframe'
