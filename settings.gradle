@@ -1,3 +1,1 @@
-include ':gutils'
-include ':app'
-rootProject.name = "gutils"
+include ':app',':gutils'
