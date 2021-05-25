@@ -1,0 +1,3 @@
+include ':gutils'
+include ':app'
+rootProject.name = "gutils"
