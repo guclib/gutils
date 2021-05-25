@@ -83,7 +83,9 @@ class DetailInBrowserActivity : BaseActivity() {
                     }
             }
         }
-        webViewContent.loadUrl(mUrl)
+        mUrl?.run{
+            webViewContent.loadUrl(this)
+        }
     }
 
     private fun initView() {

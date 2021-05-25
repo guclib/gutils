@@ -187,8 +187,8 @@ object LocationUtils {
         return if (address == null) "unknown" else address.getAddressLine(0)
     }
 
-    class MyLocationListener : LocationListener {
-        override fun onLocationChanged(location: Location?) {
+    open class MyLocationListener :LocationListener {
+        override fun onLocationChanged(location: Location) {
             location?.let {
                 mListener.onLocationChanged(it)
             }
@@ -200,15 +200,15 @@ object LocationUtils {
          *
          * @deprecated This callback will never be invoked.
          */
-        override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {
+        override fun onStatusChanged(provider: String, status: Int, extras: Bundle?) {
 
         }
 
-        override fun onProviderEnabled(provider: String?) {
+        override fun onProviderEnabled(provider: String) {
             mListener.onStatusChanged(provider, true)
         }
 
-        override fun onProviderDisabled(provider: String?) {
+        override fun onProviderDisabled(provider: String) {
             mListener.onStatusChanged(provider, false)
         }
 
